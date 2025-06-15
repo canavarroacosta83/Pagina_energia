@@ -2,19 +2,22 @@
  <!DOCTYPE html>
  <html lang="en">
  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../static/css/style1.css">
-    <title>Formulario</title>
- </head>
- <body>
-    {% block content %}
-    <h1> Gracias por rellenar el formulario </h1>
-    <p>Tu nombre : {{ name }}</p>
-    <p>Tu correo : {{ email }}</p>
-    <p>Tu numero : {{ number }}</p>
-    <p>Tu direccion : {{ address }}</p>
-    <p>Tu fecha de visita : {{ date }}</p>
-    {% endblock%}
- </body>
- </html>
+<meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../static/css/style1.css">
+   <title>Formulario</title>
+</head>
+<body>
+   {% block content %}
+   <h1> Gracias por rellenar el formulario </h1>
+   <p>Tu nombre : {{ name }}</p>
+   <p>Tu correo : {{ email }}</p>
+   <p>Tu numero : {{ number }}</p>
+   <p>Tu direccion : {{ address }}</p>
+   <p>Tu fecha de visita : {{ date }}</p>
+   <p>Tu numero de habitaciones : {{ habitacion }}</p>
+   <p>Tu numero de miembros en tu hogar es : {{ miembros }}</p>
+   <p>El promedio de Kwh que consume su hogar es: {{energia}}</p>
+   {% endblock%}
+</body>
+</html>

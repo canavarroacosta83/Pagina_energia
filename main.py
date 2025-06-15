@@ -55,12 +55,17 @@ def submit_form():
     number = request.form["number"]
     address = request.form["address"]
     date = request.form["date"]
+    habitacion = request.form["habitacion"]
+    miembros = request.form["miembros"]
+    energia = request.form["energia"]
     # Puedes guardar tus datos o enviarlos por correo electrónico
     return render_template('form_result.html', 
-                           # Coloque aquí las variables
-                           name=name, email = email,
-                           number = number, address = address,
-                           date = date
-                           )
+            
+                        name=name, email = email,
+                        number = number, address = address,
+                        date = date, habitacion = habitacion, miembros = miembros,
+                        energia = energia
+                        )
 
-app.run(debug=True)
+if __name__ == "__main__":
+    app.run(debug=True)
